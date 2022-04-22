@@ -1,0 +1,48 @@
+.achievement {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.achievement__circle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background: white;
+  position: relative;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.achievement__circle::before {
+  border-radius: 50%;
+  content: "";
+  width: 5rem;
+  height: 5rem;
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    0deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  position: absolute;
+  z-index: -8;
+  box-shadow: var(--boxShadow);
+}
+
+.achievement__line1 {
+  color: rgba(131, 58, 180, 1);
+}
+
+.achievement__line2 {
+  font-weight: bold;
+  color: var(--orange);
+  font-size: 1.1rem;
+}
